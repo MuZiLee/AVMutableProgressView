@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jUf-Wi-Gem"/>
+                        <viewControllerLayoutGuide type="bottom" id="HHO-ie-8cu"/>
+                    </layoutGuides>
+                    <view key="view" autoresizesSubviews="NO" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="9aM-99-fzh">
+                                <rect key="frame" x="-2" y="32" width="671" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="QTj-5w-HGS"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="senderSliderEvent:" destination="BYZ-38-t0r" eventType="valueChanged" id="VF8-9i-GT5"/>
+                                </connections>
+                            </slider>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="9aM-99-fzh" firstAttribute="top" secondItem="jUf-Wi-Gem" secondAttribute="bottom" constant="32" id="Ghd-73-6nV"/>
+                            <constraint firstItem="9aM-99-fzh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="OJE-KK-F4o"/>
+                            <constraint firstAttribute="trailing" secondItem="9aM-99-fzh" secondAttribute="trailing" id="fYC-Bx-o30"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18" y="90"/>
+        </scene>
+    </scenes>
+</document>
